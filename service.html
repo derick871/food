@@ -10,7 +10,7 @@
     <!-------------header---------->
     <header>
         <nav class="flex gap-6">
-            <ul class="text-red-400 justify-between item-center  gap-6 md:inline-flex lg:inline-flex left-0 top-0">
+            <ul class="text-red-400 justify-evenly item-center  gap-6 md:inline-flex lg:inline-flex left-0 top-0">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Menu</a>
@@ -20,7 +20,7 @@
         <h1>Order confirmation</h1>
     </header>
     <!--------------main----------->
-    <div class="confirmation-box"><br>
+    <div class="m-2 text-amber-500 border-none"><br>
         <section class="gap-6">
             <label for="name">Name</label>
             <input type="text"id="name" placeholder="Enter your name"><br>
@@ -30,7 +30,8 @@
             <input type="phone no"id="phone no."placeholder="phone number">
         </section>
         <section>
-            <select name="payment" id="payment">pay
+            <select name="payment" id="payment">
+                <label for="payment">payment</label>
                 <option value=""></option>
                 <option value="paypal">paypal</option>
                 <option value="ATM card">ATM card</option>
@@ -43,7 +44,7 @@
     
     <!----------footer-------->
     <footer>
-    <button ><a href="contact.html">Return to menu</a></button>
+    <button class="text-blue-900 m-2" ><a href="contact.html">Return to menu</a></button>
     </footer>
     
 </body>
