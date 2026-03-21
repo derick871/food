@@ -6,36 +6,34 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="m-0 p-0 bg-fuchsia-300  align-center">
+<body class="m-0 p-0 bg-white  align-center">
     <header>
-        <div class="relative h-screen w-full ">
-            <video autoplay muted loop class="absolute top-0 left-0">
-                <source src="/video/white house lounch.mp4" type="video">
-            </video>
-        </div>
-        <nav class="flex text-amber-800 font-arial gap-6 justify-evenly md:inline-flex lg:inline-flex  hover">
-            <h1 class="text-2xl ">Flavour</h1>
-            <img src="" alt="">
-                <a href="/">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Menu</a>
-                <a href="service.html">Services</a>
-        </nav>
-        <div class="hidden">
-             
-
+        <div>
+            <div class="relative h-[50vh] md:h-screen w-full overflow-hidden ">
+                <video autoplay muted loop class="absolute top-0 left-0 w-full h-screen object-cover">
+                  <source src="/video/white house lounch.mp4" type="video/mp4">
+               </video>
             </div>
-        </nav>
-            <nav class="flex gap-4">
-                <ul class="hidden list-none gap-4 md:inline-flex lg:inline-flex">
-                   <li><a href="/"class="hidden list-none gap-4 md:bgt-black hover:text-white hover:p-2"></a></li>
-                </ul>
-            </nav>
-        <!-----message----->
-            <div class="absolute z-10 item-center text-white">
-               <h2>welcome to White-House lounch</h2>
+            <div class="grid insert-0 bg-black/50">
+                <nav class=" z-10 flex text-amber-800 font-arial gap-6 justify-evenly md:inline-flex lg:inline-flex  hover"></nav>
+                   <img src="/images/ugali 2.jpg" alt="images"class="h-10 w-10"> 
+                  <h1 class="text-2xl m-2 " >Flavour</h1>
+                    <div class=" z-10 md:flex gap-6">
+                      <a href="/">Home</a>
+                      <a href="about.html">About</a>
+                      <a href="contact.html">Menu</a>
+                      <a href="service.html">Services</a>
+                    </div>
+                </nav>
+            </div>
+            
+          <!-----message----->
+            <div class="grid z-10 item-center text-gray-800">
+               <h2>welcome to White-House launch </h2>
                <p>we provide all kind of meal for your taste</p>
             </div>
+
+        </div>
     </header>
 </body>
 </html>
