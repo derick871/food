@@ -1,6 +1,6 @@
 console.log("Hello World");
 let firstName = "";
-let lastName = `Watako`;
+let lastName = `Wanyama`;
 console.log(`welcome, ${firstName}  ${lastName}`);
 var a = 34;
 var b = 56;
