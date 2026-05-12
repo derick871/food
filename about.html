@@ -3,36 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>White-House Lounge | About Us</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header class="  ">
-        <nav class="flex item-center text-blue-500 justify-evenly"  >
-            <a href="index.html">Home</a>
-            <a href="/">About</a>
-            <a href="contact.html">Menu</a>
-            <a href="service.html">Service</a>
-        </nav>
-        <h1 class=" underline text-amber-500 text-center ">WHITE-HOUSE LOUNCE</h1>
-    </header>
-    <!----------about us----->
-    <h2 class="underline text-center text-amber-900">About us</h2>
-    <p class="m-6 text-amber-600">We offer a large variety of the food in our premises,<br>get your desire meal
-        from us at at affordable prices to save more <br> for tomorrow.we are located
-        200 meters from OTV mall <br> on the right hand side of the round-about.we provide all that you need. <br>
-        We don't give on credit.
+<body class="bg-gray-50 text-gray-800 antialiased">
 
-    </p>
-    <!-----------contact us------>
-    visit us : <br>
-    <a class="m-4 text-blue-900" href="mailto:wanyamaderrick@gmail.com">wanymaderrick@gmail.com</a> <br>
-    <a class="m-4 text-blue-900" href="Tel:+254787219178">0787219178</a>
-    <div>
-        <button class="flex text-violet-700" type="button">
-            <a href="contact.html">Go to menu</a></button>
-    </div>
-             
-    
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-6xl mx-auto flex items-center justify-between p-4 md:px-8">
+            <div class="text-amber-600 font-bold text-xl tracking-tight">
+                WHITE-HOUSE LOUNGE
+            </div>
+            <div class="hidden md:flex gap-8 font-medium text-gray-600">
+                <a href="index.html" class="hover:text-amber-500 transition">Home</a>
+                <a href="/" class="text-amber-600 border-b-2 border-amber-500">About</a>
+                <a href="contact.html" class="hover:text-amber-500 transition">Menu</a>
+                <a href="service.html" class="hover:text-amber-500 transition">Service</a>
+            </div>
+            <!-- Mobile Menu Placeholder -->
+            <button class="md:hidden text-gray-600">Menu</button>
+        </nav>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12">
+        <!-- Hero Title -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-extrabold text-amber-600 mb-2">WHITE-HOUSE LOUNGE</h1>
+            <div class="h-1 w-20 bg-amber-500 mx-auto"></div>
+        </div>
+
+        <!-- About Us Section -->
+        <section class="bg-white p-8 rounded-2xl shadow-md border border-gray-100">
+            <h2 class="text-2xl font-bold text-amber-900 mb-4 flex items-center gap-2">
+                About Us
+            </h2>
+            <p class="text-lg leading-relaxed text-gray-700 space-y-4">
+                We offer a large variety of food in our premises. Get your desired meal 
+                from us at affordable prices to save more for tomorrow. 
+            </p>
+            <div class="mt-6 p-4 bg-amber-50 rounded-lg border-l-4 border-amber-500">
+                <p class="text-amber-800 italic">
+                    <strong>Find us:</strong> Located 200 meters from OTV Mall, on the right-hand side of the roundabout. We provide everything you need.
+                </p>
+            </div>
+            <p class="mt-4 text-sm font-semibold text-red-600 uppercase tracking-wide">
+                Note: We do not offer credit services.
+            </p>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="mt-12 text-center">
+            <h3 class="text-xl font-bold text-gray-800 mb-6">Visit Us or Get in Touch</h3>
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <a href="mailto:wanyamaderrick@gmail.com" class="flex items-center justify-center gap-2 bg-white px-6 py-3 rounded-xl shadow-sm border hover:border-amber-500 transition group">
+                    <span class="text-gray-600 group-hover:text-amber-600">wanyamaderrick@gmail.com</span>
+                </a>
+                <a href="tel:+254787219178" class="flex items-center justify-center gap-2 bg-white px-6 py-3 rounded-xl shadow-sm border hover:border-amber-500 transition group">
+                    <span class="text-gray-600 group-hover:text-amber-600">0787 219178</span>
+                </a>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="mt-10">
+                <a href="contact.html" class="inline-flex items-center justify-center bg-violet-700 hover:bg-violet-800 text-white font-bold py-4 px-10 rounded-full transition-transform active:scale-95 shadow-lg">
+                    Go to Menu
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-10 text-center text-gray-400 text-sm">
+        &copy; 2026 White-House Lounge. All rights reserved.
+    </footer>
+
 </body>
 </html>

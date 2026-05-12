@@ -3,50 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order Confirmation</title>
+    <title>Order Procedure | White-House</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="grid bg-slate-500 font-arial  m-0">
-    <!-------------header---------->
-    <header>
-        <nav class="flex gap-6">
-            <ul class="text-red-400 justify-evenly item-center  md:inline-flex lg:inline-flex left-0 top-0">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Menu</a>
-                <a href="/">Services</a>
+<body class="bg-slate-100 font-sans min-h-screen flex flex-col">
+
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-sm">
+        <nav class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="font-bold text-amber-600">WHITE-HOUSE</div>
+            <ul class="flex gap-6 text-gray-600 font-medium">
+                <li><a href="index.html" class="hover:text-amber-500 transition">Home</a></li>
+                <li><a href="about.html" class="hover:text-amber-500 transition">About</a></li>
+                <li><a href="contact.html" class="hover:text-amber-500 transition">Menu</a></li>
+                <li><a href="/" class="hover:text-amber-500 transition">Services</a></li>
             </ul>
-        </nav> <br>
-        <h1>Order procedure</h1>
+        </nav>
     </header>
-    <!--------------main----------->
-    <div class="m-2 text-amber-500 border-none"><br>
-        <form action="">
-            <label for="name">Name</label>
-            <input type="text"id="name" placeholder="Enter your name"><br><br>
-            <label for="location">Location</label>
-            <input type="text" id="location" placeholder="pin location"><br><br>
-            <label for="phone no">phone No.</label>
-            <input type="phone no"id="phone no."placeholder="phone number">
-        </section>
-        <section>
-            <label for="payment">payment</label>
-            <select name="payment" id="payment">
-                <option value=""></option>
-                <option value="paypal">paypal</option>
-                <option value="ATM card">ATM card</option>
-                <option value="M-pesa">M-pesa</option>
-                <option value="Bank">Bank</option>
-            </select>
-        </form>
-    </div>
-        
-    
-    <!----------footer-------->
-    <footer>
-    <button class="text-violet-700 m-2" >
-        <a href="contact.html">Return to menu</a></button>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex items-center justify-center p-6">
+        <div class="bg-white w-full max-w-md rounded-2xl shadow-xl overflow-hidden border border-gray-100">
+            
+            <div class="bg-amber-500 p-6">
+                <h1 class="text-2xl font-bold text-white text-center">Order Procedure</h1>
+                <p class="text-amber-100 text-center text-sm">Please fill in your delivery details</p>
+            </div>
+
+            <form class="p-8 space-y-5">
+                <!-- Name Field -->
+                <div>
+                    <label for="name" class="block text-sm font-semibold text-gray-700 mb-1">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" 
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none transition">
+                </div>
+
+                <!-- Location Field -->
+                <div>
+                    <label for="location" class="block text-sm font-semibold text-gray-700 mb-1">Delivery Location</label>
+                    <input type="text" id="location" placeholder="e.g. Apartment, Street, City" 
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none transition">
+                </div>
+
+                <!-- Phone Field -->
+                <div>
+                    <label for="phone" class="block text-sm font-semibold text-gray-700 mb-1">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="0712 345 678" 
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none transition">
+                </div>
+
+                <!-- Payment Method -->
+                <div>
+                    <label for="payment" class="block text-sm font-semibold text-gray-700 mb-1">Payment Method</label>
+                    <select id="payment" name="payment" 
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-amber-500 focus:outline-none transition">
+                        <option value="" disabled selected>Select a method</option>
+                        <option value="mpesa">M-Pesa</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="card">ATM Card</option>
+                        <option value="bank">Bank Transfer</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 rounded-lg transition-all shadow-md active:scale-95">
+                    Confirm Order
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="p-6 text-center">
+        <a href="contact.html" class="text-violet-700 hover:text-violet-900 font-semibold flex items-center justify-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            Return to Menu
+        </a>
     </footer>
-    
+
 </body>
 </html>

@@ -3,154 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>food menu</title>
+    <title>White House | Food Menu</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
 </head>
-<body class=" m-0 p-0 bg-white  text-white">
-    <header>
-        <nav class=" text-center relative justify-between hover tranformation-45">
-            <ul class="list-none gap-8 md:inline-flex lg:inline-flex justify-evenly">
-                <a href="home">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Menu</a>
-                <a href="service.html">Services</a>
-            </ul><br>
-            <div class="m-0 border-none">
-               <label for="search"><a href="card">search</a></label>
-               <input type="search" id="search" name="search">
+<body class="m-0 p-0 bg-white text-gray-800 antialiased">
+
+    <!-- Header & Nav -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm p-4">
+        <nav class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <ul class="flex gap-8 font-medium text-amber-800">
+                <li><a href="index.html" class="hover:text-amber-600 transition">Home</a></li>
+                <li><a href="about.html" class="hover:text-amber-600 transition">About</a></li>
+                <li><a href="contact.html" class="border-b-2 border-amber-800">Menu</a></li>
+                <li><a href="service.html" class="hover:text-amber-600 transition">Services</a></li>
+            </ul>
+            
+            <div class="flex items-center gap-2">
+                <input type="search" id="search" placeholder="Search food..." 
+                    class="px-4 py-1 border border-amber-200 rounded-full focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm">
             </div>
         </nav>
-        <h1 class="text center text-blue-600 font-bold text-yellow-800">Food Menu</h1>
-        
     </header>
-    <div class="grid">
-        <h3 class="font-bold text-2xl hover">ugali</h3>
-        <div class="flex flex-row gap-1">
-        <div class="flex-1 rounded-md transition-0.2s hover:tranform-1.02 m-4">
-            <img src="/images/ugali 1.jpg" alt="images"class="w-60 h-50 rounded-md">
-            <div class="container">
-                <p class="text-amber-800 bold font-18px">price: ksh 300</p>
+
+    <main class="max-w-6xl mx-auto p-6">
+        <h1 class="text-4xl font-bold text-amber-800 text-center my-8 uppercase tracking-widest">Food Menu</h1>
+
+        <!-- Section: Ugali -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-amber-900 mb-6 border-l-4 border-amber-500 pl-3">Ugali Specials</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <img src="/images/ugali 1.jpg" alt="Ugali" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Standard Ugali</h3>
+                        <p class="text-amber-800 font-bold mt-2">Ksh 300</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <img src="/images/ugali x meat.jpg" alt="Ugali Meat" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Ugali x Nyama</h3>
+                        <p class="text-amber-800 font-bold mt-2">Ksh 500</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <img src="/images/ugali 5.jpg" alt="Ugali" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Ugali Saucer</h3>
+                        <p class="text-amber-800 font-bold mt-2">Ksh 200</p>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <img src="/images/ugali 6.jpg" alt="Ugali" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Ugali Plain</h3>
+                        <p class="text-amber-800 font-bold mt-2">Ksh 150</p>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <!-- Section: Fries -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-amber-900 mb-6 border-l-4 border-amber-500 pl-3">Crispy Fries</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all">
+                    <img src="/images/fries 1.jpg" alt="Fries" class="w-full h-48 object-cover group-hover:scale-110 transition-transform">
+                    <div class="p-4">
+                        <h3 class="font-bold">Masala Fries</h3>
+                        <p class="text-amber-800 font-bold mt-1">Ksh 250</p>
+                    </div>
+                </div>
+                <div class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all">
+                    <img src="/images/fries 2.jpg" alt="Fries" class="w-full h-48 object-cover group-hover:scale-110 transition-transform">
+                    <div class="p-4">
+                        <h3 class="font-bold">Plain Fries</h3>
+                        <p class="text-amber-800 font-bold mt-1">Ksh 100</p>
+                    </div>
+                </div>
+                <div class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all">
+                    <img src="/images/fries 3.jpg" alt="Fries" class="w-full h-48 object-cover group-hover:scale-110 transition-transform">
+                    <div class="p-4">
+                        <h3 class="font-bold">Large Fries</h3>
+                        <p class="text-amber-800 font-bold mt-1">Ksh 150</p>
+                    </div>
+                </div>
+                <div class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all">
+                    <img src="/images/fries 4.jpg" alt="Fries" class="w-full h-48 object-cover group-hover:scale-110 transition-transform">
+                    <div class="p-4">
+                        <h3 class="font-bold">Family Pack</h3>
+                        <p class="text-amber-800 font-bold mt-1">Ksh 250</p>
+                    </div>
+                </div>
             </div>
-        <div class="flex-1 rounded-md transition-0.2s hover:tranform-1.02 m-4">
-            <img src="/images/ugali x meat.jpg" alt="images"class="w-60 h-50 rounded-md">
-            <div class="container">
-                <p class="text-amber-800 bold font-18px">price: ksh 500</p>
-            </div>
-            </div>
-        <div class="flex-1 rounded-md transition-0.2s hover:tranform-1.02 m-4">
-            <img src="/images/ugali 5.jpg" alt="images"class="w-60 h-50 rounded-md">
-            <div class="container">
-                <p class="text-amber-800 bold font-18px">price: ksh 200</p>
-            </div>
-            </div>
-        <div class="flex-1 rounded-md transition-0.2s hover:tranform-1.02 m-4">
-            <img src="/images/ugali 6.jpg" alt="images"class="w-60 h-50 rounded-md">
-            <div class="container">
-              
-                <p class="text-amber-800 bold font-18px">price: ksh 150</p>
-            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <div class="flex justify-center mt-16 mb-10">
+            <a href="service.html" class="bg-violet-700 hover:bg-violet-800 text-white px-10 py-3 rounded-full font-bold shadow-lg transition-transform active:scale-95">
+                Go to Services
+            </a>
         </div>
-        </div>
-        <div class="flex flex-row gap-1">
-            <h3 class="[m-10,0 font-bold]">fries</h3>
-            <div class="flex-1 rounded-md hover:transition-0.2s">
-               <img src="/images/fries 1.jpg" alt="images"class="w-60 h-50 ">
-                <div class="container">
-                  
-                  <p class="text-amber-800 bold font-18px">Price: ksh 250</p>
-                </div>
-            </div>
-            <div class="flex-1 rounded-md transition-0.2s hover:tranform-1.02 m-4">
-               <img src="/images/fries 2.jpg" alt="images"class="w-60 h-50 ">
-                <div class="container">
-                  
-                  <p class="text-amber-800 bold font-18px">Price: ksh 100</p>
-                </div>
-            </div>
-            <div></div>
-            <div class="flex-1 rounded-md transition-0.2s hover:tranform-1.02 m-4">
-            <img src="/images/fries 3.jpg" alt="images"class="w-50 h-50 ">
-            <div class="container">
-                
-                <p class="text-amber-800 bold font-18px">Price: ksh 150</p>
-            </div>
-            </div>
-            <div class="flex-1 rounded-md transition-0.2s hover:tranform-1.02 m-4">
-            <img src="/images/fries 4.jpg" alt="images"class="w-60 h-50 ">
-            <div class="container">
-                
-                <p class="text-amber-800 bold font-18px">Price: ksh 250</p>
-            </div>
-            </div>
-        </div>
-        </div>
-        <div class="flex flex-row gap-1">
-            <h3 class="[m-10,0 font-bold]">pizza</h3>
-            <div class="flex-1 rounded-md transition-0.2s hover:tranform-1.02 m-4 hover:transition-0.2s">
-             <img src="/images/pizza 1.jpg" alt="images"class="w-60 h-50">
-                <div class="container">
-                  <p class="text-amber-800 bold font-18px">price: ksh300</p>
-                </div>
-            </div>
-            <div class="flex-1 rounded-md transition-0.2s hover:tranform-1.02 m-4">
-               <img src="/images/pizza 2.jpg" alt="images"class="w-60 h-50">
-                <div class="container">
-                 
-                  <p class="text-amber-800 bold font-18px">price: ksh250</p>
-                </div>
-            </div>
-            <div class="flex-1 rounded-md transition-0.2s hover:tranform-1.02 m-4">
-              <img src="/images/pizza 3.jpg" alt="images"class="w-60 h-50">
-                <div class="container">
-                   
-                   <p class="text-amber-800 bold font-18px">price: ksh350</p>
-                </div>
-            </div>
-            <div class="flex-1 rounded-md transition-0.2s hover:tranform-1.02 m-4">
-            <img src="/images/pizza 4.jpg" alt="images"class="w-60 h-50">
-            <div class="container">
-                <p class="text-amber-800 bold font-18px">price: ksh200</p>
-            </div>
-            </div>
-        </div>
-        </div>
-        <div class="flex flex-row gap-1">
-            <h3 class="[m-10 0 font-bold]">chapati</h3>
-        <div class="flex-1 rounded-md transition-0.2s hover:tranform-1.02 m-4 hover:transition-0.2s">
-              <img src="/images/download (1).jpg" alt="images"class="w-60 h-50">
-                <div class="">
-                  
-                  <p class="text-amber-800 bold font-18px">price: ksh200</p>
-                </div>
-            </div>
-            <div class="flex-1 rounded-md transition-0.2s hover:tranform-1.02 m-4">
-              <img src="/images/download (2).jpg" alt="images"class="w-60 h-50">
-                <div class="">
-                  <p class="text-amber-800 bold font-18px">price: ksh150</p>
-                </div>
-            </div>
-            <div class="flex-1 rounded-md transition-0.2s hover:tranform-1.02 m-4">
-              <img src="/images/download (3).jpg" alt="images"class="w-60 h-50">
-                <div class="">
-                  <p class="text-amber-800 bold font-18px">price: ksh80</p>
-                </div>
-            </div>
-            <div class="flex-1 rounded-md transition-0.2s hover:tranform-1.02 m-4">
-              <img src="/images/india-2731812_1280.jpg" alt="images"class="w-60 h-50">
-                <div class="">
-                   <p class="text-amber-800 bold font-18px">price: ksh200</p>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    <div class="border-solid border-black">
-        <button class=" flex  text-violet-700 bottom-10 m-2" type="button">
-            <a href="service.html">Go to services</a></button>
-    </div>
-    
-    
+    </main>
+
 </body>
 </html>
